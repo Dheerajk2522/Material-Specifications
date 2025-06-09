@@ -11,6 +11,7 @@ from llama_index.core import Document, VectorStoreIndex, Settings, load_index_fr
 from llama_index.core.storage.storage_context import StorageContext
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.llms.openai import OpenAI
+from llama_index.core.prompts import PromptTemplate
 
 class StreamlitPDFChatbot:
     """
@@ -130,8 +131,6 @@ class StreamlitPDFChatbot:
                 return "❌ No vector index found. Please run the PDF parser first to create an index."
         
         try:
-            # Test if index has content
-            query_engine = self.index.as_query_engine(similarity_top_k=similarity_top_k)
             
             # Debug: Check if retriever returns results
             retriever = self.index.as_retriever(similarity_top_k=similarity_top_k)
@@ -142,6 +141,24 @@ class StreamlitPDFChatbot:
             
             # Show number of relevant chunks found
             # st.info(f"🔍 Found {len(retrieved_nodes)} relevant document chunks")
+            
+            custom_prompt = PromptTemplate(
+                "Context information is below.\n"
+                "---------------------\n"
+                "{context_str}\n"
+                "---------------------\n"
+                "Given the context information and not prior knowledge, "
+                "answer the query in exactly this format:\n"
+                "**Answer:** [Provide a clear, concise one-line answer]\n"
+                "**Explanation:** [Provide a brief 2-3 sentence explanation with supporting details from the context]\n"
+                "Query: {query_str}\n"
+                "Answer: "
+            )
+            
+            
+            query_engine = self.index.as_query_engine(similarity_top_k=similarity_top_k,text_qa_template=custom_prompt)
+            response = query_engine.query(question)
+            
             
             response = query_engine.query(question)
             
