@@ -212,7 +212,7 @@ def main():
     if "chatbot" not in st.session_state:
         st.session_state.chatbot = StreamlitPDFChatbot(
             llama_api_key=LLAMA_API_KEY,
-            OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+            openai_api_key=OPENAI_API_KEY
         )
     
     # Initialize index status check (without displaying status)
