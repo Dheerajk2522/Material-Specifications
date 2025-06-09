@@ -1,0 +1,62 @@
+{
+  "parsed_files": [
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100049154_AH.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100059275_AJ.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100096481 -  CSP-146_AG.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100184457_AJ.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100237403_BB.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100375430_AW.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100478616_AJ.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100484807_AK.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100586203_AN.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100586205_AK.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100632611_AT.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100753769_AD.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100753776_AB.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100871780_AB.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100986456_AK.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\102028569_AA.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\102741858_AK.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\102741858_AM.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\102741858_AP.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\103146200_AK.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\CIS-59_AN.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\CNMS-P4000_BE.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100049154_AH.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100059275_AJ.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100096481 -  CSP-146_AG.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100184457_AJ.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100237403_BB.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100375430_AW.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100478616_AJ.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100484807_AK.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100586203_AN.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100586205_AK.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100632611_AT.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100753769_AD.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100753776_AB.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100871780_AB.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\100986456_AK.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\102028569_AA.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\102741858_AK.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\102741858_AM.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\102741858_AP.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\103146200_AK.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\CIS-59_AN.pdf",
+    "C:\\Users\\aipro\\Downloads\\oil_sample\\CNMS-P4000_BE.pdf"
+  ],
+  "parse_sessions": [
+    {
+      "timestamp": "2025-06-09T12:51:21.130750",
+      "folder_path": "C:\\Users\\aipro\\Downloads\\oil_sample",
+      "files_parsed": 22,
+      "new_documents": 178
+    },
+    {
+      "timestamp": "2025-06-09T13:15:49.111704",
+      "folder_path": "C:\\Users\\aipro\\Downloads\\oil_sample",
+      "files_parsed": 22,
+      "new_documents": 178
+    }
+  ]
+}
