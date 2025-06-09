@@ -33,8 +33,8 @@ class StreamlitPDFChatbot:
         self.index_dir = Path(index_dir)
         
         # Set up LlamaIndex settings
-        Settings.embed_model = OpenAIEmbedding(api_key=st.secrets("OPENAI_API_KEY"))
-        Settings.llm = OpenAI(api_key=st.secrets("OPENAI_API_KEY"))
+        Settings.embed_model = OpenAIEmbedding(api_key= st.secrets["OPENAI_API_KEY"])
+        Settings.llm = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
         
         self.index = None
         self.parsed_files_log = self.index_dir / "parsed_files.json"
@@ -212,7 +212,7 @@ def main():
     if "chatbot" not in st.session_state:
         st.session_state.chatbot = StreamlitPDFChatbot(
             llama_api_key=LLAMA_API_KEY,
-            openai_api_key=st.secrets("OPENAI_API_KEY")
+            OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
         )
     
     # Initialize index status check (without displaying status)
