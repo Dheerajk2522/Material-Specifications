@@ -164,8 +164,8 @@ def main():
     )
     
     # Configuration - Set your API keys here
-    LLAMA_API_KEY = st.secrets("LLAMA_API_KEY")
-    OPENAI_API_KEY = st.secrets("OPENAI_API_KEY")  # Make sure to set this environment variable
+    LLAMA_API_KEY = st.secrets["LLAMA_API_KEY"]
+    OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]  # Make sure to set this environment variable
     SIMILARITY_TOP_K = 5  # Number of relevant chunks to retrieve
     
     # Custom CSS for better appearance
