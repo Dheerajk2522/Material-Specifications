@@ -338,7 +338,7 @@ class StreamlitPDFChatbot:
         Settings.embed_model = OpenAIEmbedding(api_key= st.secrets["OPENAI_API_KEY"])
         Settings.llm = OpenAI(
             api_key=st.secrets["OPENAI_API_KEY"],
-            model="gpt-4",  # Using GPT-4 for better table generation
+            model="gpt-4o",  # Using GPT-4 for better table generation
             temperature=0.1,  # Lower temperature for more consistent formatting
             max_tokens=1500   # Ensure enough tokens for complete responses
         )
@@ -436,6 +436,10 @@ class StreamlitPDFChatbot:
             | Property | Value | Notes |
             |----------|-------|-------|
             | [Property Name] | [Value] | [Unit/Standard] |
+            
+            **📌 Additional Notes:**
+            - Use 2–3 brief bullet points explaining how the answer was derived.
+            - Refer to key terms, properties, or section numbers if available.
             
             Query: {query_str}
             Answer:"""
