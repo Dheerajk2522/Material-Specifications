@@ -143,16 +143,30 @@ class StreamlitPDFChatbot:
             # st.info(f"🔍 Found {len(retrieved_nodes)} relevant document chunks")
             
             custom_prompt = PromptTemplate(
-                "Context information is below.\n"
+                "Context information is provided below.\n"
                 "---------------------\n"
                 "{context_str}\n"
                 "---------------------\n"
-                "Given the context information and not prior knowledge, "
-                "answer the query in exactly this format:\n"
-                "**Answer:** [Provide a clear, concise one-line answer]\n"
-                "**Explanation:** [Provide a brief 2-3 sentence explanation with supporting details from the context]\n"
+                "Using only the context above (no outside knowledge), answer the query in the following structured format:\n\n"
+                "**🔍 Answer:**\n"
+                "- [Provide a concise, direct answer in one line. Use a bullet if applicable.]\n\n"
+                "**📌 Explanation:**\n"
+                "- Use 2–3 brief bullet points explaining how the answer was derived.\n"
+                "- Refer to key terms, properties, or section numbers if available.\n\n"
+                "**📊 Table (if applicable):**\n"
+                "IMPORTANT: If creating a table, use proper markdown table format with pipes (|) and ensure:\n"
+                "- Header row with column names\n"
+                "- Separator row with dashes\n"
+                "- Data rows with consistent column alignment\n"
+                "- No extra spaces or formatting issues\n\n"
+                "Example table format:\n"
+                "| Property | Value | Unit/Notes |\n"
+                "|----------|-------|-----------|\n"
+                "| Tensile Strength | 3000 | psi (minimum per ASTM D-412) |\n"
+                "| Hardness | 90±5 | Durometer A (ASTM D-2240) |\n\n"
+                "*If no table is needed, you may omit this section.*\n\n"
                 "Query: {query_str}\n"
-                "Answer: "
+                "Answer:"
             )
             
             
