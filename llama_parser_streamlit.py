@@ -334,9 +334,10 @@ class StreamlitPDFChatbot:
         self.index_dir = Path(index_dir)
         
         # Set up LlamaIndex settings with more explicit configuration
-        Settings.embed_model = OpenAIEmbedding(api_key=openai_api_key)
+        
+        Settings.embed_model = OpenAIEmbedding(api_key= st.secrets["OPENAI_API_KEY"])
         Settings.llm = OpenAI(
-            api_key=openai_api_key,
+            api_key=st.secrets["OPENAI_API_KEY"],
             model="gpt-4",  # Using GPT-4 for better table generation
             temperature=0.1,  # Lower temperature for more consistent formatting
             max_tokens=1500   # Ensure enough tokens for complete responses
@@ -569,8 +570,8 @@ def main():
     )
     
     # Configuration
-    LLAMA_API_KEY = "llx-s1tvfbKSb68NQ6ZDXhDZunJeWzFDYkk65M5gK0x4pSbd2FBJ"
-    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+    LLAMA_API_KEY = st.secrets["LLAMA_API_KEY"]
+    OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
     
     # Custom CSS for better appearance
     st.markdown("""
